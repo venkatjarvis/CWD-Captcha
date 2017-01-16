@@ -1,18 +1,4 @@
 <?php
-/*
-Plugin Name: Artbees Themes Captcha
-Plugin URI: http://artbees.net/themes
-Description: A simple captcha script originally developed by "Jose Rodriguez" and adopted by artbees themes to provide more secure contact forms.
-Version: 1.0
-Author: Jose Rodriguez <jose.rodriguez@exec.cl>
-Author URI: http://code.google.com/p/cool-php-captcha
-*/
-
-
-/**
- * Mk_Artbees_Captcha class
- *
- */
 class Mk_Artbees_Captcha
 {
     
@@ -372,7 +358,7 @@ class Mk_Artbees_Captcha
      */
     protected function ReduceImage()
     {
-        // Reduzco el tamaño de la imagen
+        // Reduzco el tamaÃ±o de la imagen
         $imResampled = imagecreatetruecolor($this->width, $this->height);
         imagecopyresampled($imResampled, $this->im, 0, 0, 0, 0, $this->width, $this->height, $this->width * $this->scale, $this->height * $this->scale);
         imagedestroy($this->im);
